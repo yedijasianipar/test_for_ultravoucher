@@ -1,0 +1,11 @@
+jawaban test no 2.
+
+dikarenakan tidak terdapat nama tabel pada soal, saya asumsikan bahwa nama
+tabel tersebut adalah mst_student yang akan digabungkan/join dengan tabel mst_parent
+
+berikut query sql untuk permasalahan soal no 2:
+
+select mst_student.id, mst_student.name, mst_parent.parent_name
+from mst_student
+left join mst_parent
+on mst_student.id_parent = mst_parent.id_parent;
